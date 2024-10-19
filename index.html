@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0d1117;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            padding: 20px;
+            background-color: #161b22;
+            position: relative;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #e94560;
+        }
+        nav {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: none;
+            background-color: #20252c;
+            border-radius: 5px;
+        }
+        nav ul li {
+            padding: 10px;
+            text-align: left;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #e94560;
+        }
+        .menu-button {
+            cursor: pointer;
+            background-color: #e94560;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        .container {
+            margin-top: 30px;
+        }
+        .container img {
+            width: 40%;
+            height: auto;
+            margin: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .container img:hover {
+            transform: scale(1.1);
+        }
+        .description {
+            margin: 20px;
+            font-size: 1.2em;
+            color: #adb5bd;
+        }
+        footer {
+            padding: 10px;
+            background-color: #161b22;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: #e94560;
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Valorant - Rise to the Challenge</h1>
+        <nav>
+            <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
+            <ul id="menu">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="ourstory.html">Our Story</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <img src="val.png" alt="Valorant Image 1">
+        <img src="val1.png" alt="Valorant Image 2">
+    </div>
+
+    <div class="description">
+        <p>Valorant is a tactical shooter game by Riot Games. Join the battle, master your agent's abilities, and rise to the top!</p>
+        <p><a href="mechanics.html">Explore Valorant's Game Mechanics</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mehran's Cheat Code For Everything | Cheap</p>
+    </footer>
+</body>
+</html>
